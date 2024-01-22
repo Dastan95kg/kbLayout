@@ -139,3 +139,7 @@ html * {
     color: #060606;
     line-height: 24px;
 }
+
+.container {
+    padding: 0 168px;
+}
