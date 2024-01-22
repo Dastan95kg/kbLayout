@@ -140,6 +140,10 @@ html * {
     line-height: 24px;
 }
 
+.container {
+    padding: 0 168px;
+}
+
 body {
     display: flex;
     justify-content: center;
