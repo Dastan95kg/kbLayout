@@ -1,0 +1,35 @@
+.container {
+    padding: 0 168px;
+}
+
+body {
+    max-width: 1280px;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+/* Intro */
+.intro {
+    padding: 80px 0 40px;
+}
+
+.intro__title {
+    font-size: 56px;
+    line-height: 64px;
+    background: var(--gradient-gradient-03, linear-gradient(90deg, #0175C7 28.73%, #0148FF 38.62%, #5650E3 50.35%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+
+.intro__subtitle {
+    margin-bottom: 8px;
+}
+
+/* MainImg */
+.mainImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
