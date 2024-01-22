@@ -8,6 +8,7 @@
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.56px;
+  margin-bottom: 16px;
 }
 
 .intro__title-special {
@@ -34,6 +35,7 @@
   width: 829px;
   display: flex;
   gap: 40px;
+  margin-top: 16px;
 }
 
 .intro__list-item {
