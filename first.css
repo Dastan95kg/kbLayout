@@ -1,5 +1,3 @@
-
-
 /* Intro */
 .intro {
     padding: 80px 0 40px;
@@ -16,5 +14,55 @@
 }
 
 .intro__subtitle {
+    margin-bottom: 8px;
+}
+
+/* Reasons */
+.reasons {
+    padding: 56px 0;
+}
+
+.reasons__grid {
+    display: grid;
+    grid-template-columns: 544px 384px;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+
+.reasons__card {
+    border: 1px solid var(--gradient-gradient-03, #0078C2);
+    padding: 24px 32px;
+}
+
+.reasons__card:nth-child(2) {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.reasons__num {
+    font-size: 56px;
+    letter-spacing: -1.12px;
+    background: var(--gradient-gradient-03, linear-gradient(90deg, #0078C2 0%, #0047FF 69.5%, #8453D2 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 56px;
+}
+
+.reasons__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 12px 0 8px;
+}
+
+.reasons__subtitle {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.reasons__wrapper {
+    padding-top: 8px;
+}
+
+.reasons__wrapper p {
     margin-bottom: 8px;
 }
