@@ -232,6 +232,7 @@
 .shapeIcon {
     width: 34.641px;
     height: 40px;
+    fill: #0A68F1;
 }
 
 .programs__custom {
@@ -255,4 +256,176 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Badges */
+.badges {
+    margin-bottom: 56px;
+}
+
+.badges__grid {
+    padding: 24px 32px;
+    background: var(--dark-F5F5F5---90, #F5F5F5);
+    display: grid;
+    grid-template-columns: 1fr 353px;
+    gap: 16px;
+}
+
+.badges__title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.4px;
+    font-family: 'Museo100';
+    margin-bottom: 16px;
+}
+
+.badges__btn {
+    border-radius: 100px;
+    border: 1px solid var(--gradient-gradient-03, #0078C2);
+    padding: 16px 32px;
+    margin-top: 24px;
+    font-family: 'Museo700';
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2.56px;
+    cursor: pointer;
+}
+
+.badges__btn:hover {
+    background: var(--dark-060606---10, #060606);
+    color: var(--dark-FFFFFF---100, #FFF);
+}
+
+.badges__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HowTo */
+.howTo {
+    background: var(--dark-F5F5F5---90, #F5F5F5);
+    padding: 56px 0;
+}
+
+.howTo__title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+    font-family: 'Museo100';
+}
+
+.howTo__subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.howTo__headerText {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.24px;
+    font-family: 'Museo500';
+    margin-bottom: 24px;
+}
+
+.howTo__kb,
+.howTo__learn {
+    border: 1px solid var(--gradient-gradient-03, #0078C2);
+    background: var(--dark-FFFFFF---100, #FFF);
+    padding: 24px 32px;
+}
+
+.howTo__label {
+    font-size: 20px;
+    font-family: 'Museo500';
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
+}
+
+.howTo__card {
+    border-top: 1px solid var(--dark-D2D2D3--80, #D2D2D3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.howTo__left {
+    margin-right: 10px;
+}
+
+.howTo__left a {
+    font-family: 'Museo500';
+}
+
+.howTo__card:hover.howTo__card a {
+    color: var(--blue-0A68F1---50, #0A68F1);
+}
+
+.howTo__card:hover .arrowIcon {
+    fill: var(--blue-0A68F1---50, #0A68F1);
+}
+
+.arrowIcon {
+    width: 20px;
+    height: 20px;
+}
+
+/* forced ʻinherit` inheritance to change style of SVG sprite icon */
+path {
+    fill: inherit;
+    stroke: inherit;
+}
+
+.howTo__learn {
+    margin-top: 16px;
+}
+
+/* Ambassador */
+.ambassador {
+    padding: 56px 0;
+}
+
+.ambassador__content {
+    background: var(--dark-F5F5F5---90, #F5F5F5);
+    padding: 24px 32px;
+}
+
+.ambassador h3 {
+    font-size: 40px;
+    font-family: 'Museo100';
+    line-height: 48px;
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+}
+
+.ambassador p,
+ul {
+    font-size: 18px;
+}
+
+.ambassador__text {
+    margin-bottom: 10px;
+}
+
+.ambassador__list {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+/* Footer */
+footer {
+    padding: 32px 40px;
+    background: var(--dark-060606---10, #060606);
+}
+
+.footer__text {
+    text-align: center;
+    color: var(--dark-FFFFFF---100, #FFF);
+    font-size: 20px;
+    font-family: 'Museo500';
+    line-height: 28px;
+    letter-spacing: 0.2px;
 }
