@@ -20,7 +20,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 56px;
-
   font-family: "Museo500";
   line-height: 64px;
   letter-spacing: 0.56px;
@@ -71,7 +70,7 @@
 .navigation__block-item-title {
   color: var(--dark-060606---10, #060606);
   font-size: 24px;
-  font-weight: 400;
+  font-family: "Museo500";
   line-height: 32px;
   letter-spacing: 0.24px;
   margin-bottom: 16px;
@@ -81,31 +80,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  font-weight: 600;
   gap: 12px;
 }
 
 .navigation__block-item-links a {
   color: var(--dark-060606---10, #060606);
   font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
+  font-family: "Museo700";
   text-decoration-line: underline;
 }
 
 /* Project */
 .project__title {
   color: var(--dark-060606---10, #060606);
-  font-family: "Museo Sans";
   font-size: 40px;
-  font-style: normal;
-  font-weight: 250;
   line-height: 48px;
   letter-spacing: 0.4px;
   margin-bottom: 32px;
 }
 
+/* Project__example1 */
 .project__example1 {
   margin-bottom: 40px;
 }
@@ -115,7 +109,6 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  align-self: stretch;
   width: 100%;
   margin-bottom: 32px;
 }
@@ -132,13 +125,13 @@
 .example1__intro-title h4 {
   color: var(--dark-060606---10, #060606);
   font-size: 16px;
-  font-weight: 600;
+  font-family: "Museo700";
 }
 
 .example1__intro-subtitle {
   color: var(--dark-060606---10, #060606);
   font-size: 24px;
-  font-weight: 400;
+  font-family: "Museo500";
   line-height: 32px;
   letter-spacing: 0.24px;
 }
@@ -211,20 +204,20 @@
   color: var(--dark-060606---10, #060606);
   text-align: center;
   font-size: 16px;
-  font-weight: 700;
+  font-family: "Museo700";
+  text-transform: uppercase;
 }
 
 .cardText {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  align-self: stretch;
 }
 
 .cardDescriptionTitle {
   color: var(--dark-060606---10, #060606);
   font-size: 16px;
-  font-weight: 600;
+  font-family: "Museo700";
 }
 
 .cardDescriptionText {
@@ -239,14 +232,141 @@
   border-left: 4px solid var(--purple-0A68F1---50, #0a68f1);
   background: var(--dark-F5F5F5---90, #f5f5f5);
   color: var(--dark-060606---10, #060606);
-  font-size: 18px;
   margin-top: 16px;
 }
 
 .example1__footer span {
-  color: var(--dark-060606---10, #060606);
   font-size: 18px;
-  font-weight: 600;
+  font-family: "Museo700";
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+/* Project__example2 */
+.example2__intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.example2__intro-title {
+  display: flex;
+  width: 460px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.example2__intro-title h4 {
+  color: var(--dark-060606---10, #060606);
+  font-size: 16px;
+  font-family: "Museo700";
+}
+
+.example2__intro-subtitle {
+  color: var(--dark-060606---10, #060606);
+  font-family: "Museo500";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.24px;
+}
+
+.example2__bonusSystem-title {
+  color: var(--dark-060606---10, #060606);
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: "Museo700";
+  font-size: 16px;
+}
+
+.example2__bonusSystem-tables {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
+}
+
+.bonusSystem__table {
+  display: flex;
+  padding: 24px 32px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid var(--gradient-gradient-03, #0175c7);
+  background: var(--dark-FFFFFF---100, #fff);
+}
+
+.bonusSystem__table-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bonusSystem__table-title h3 {
+  color: var(--dark-060606---10, #060606);
+  font-family: "Museo700";
+  font-size: 16px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.minusIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.bonusSystem__table-content {
+  color: var(--dark-060606---10, #060606);
+  font-size: 16px;
+  border-top: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  background: var(--dark-FFFFFF---100, #fff);
+  padding-top: 12px;
+}
+
+.bonusSystem__table-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.bonusSystem__table-content1 {
+  margin-bottom: 16px;
+}
+
+.bonusSystem__table-content1 p {
+  margin-bottom: 16px;
+}
+
+.bonusSystem__table-content2 {
+  margin-bottom: 16px;
+}
+
+.bonusSystem__table-badges {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.bonusSystem__table-badgesImg {
+  width: 100px;
+  height: 100px;
+}
+
+.example2__footer {
+  display: flex;
+  padding: 24px 32px;
+  align-items: center;
+  border-left: 4px solid var(--purple-0A68F1---50, #0a68f1);
+  background: var(--dark-F5F5F5---90, #f5f5f5);
+  color: var(--dark-060606---10, #060606);
+}
+
+.example2__footer span {
+  font-size: 18px;
+  font-family: "Museo700";
   line-height: 24px;
   text-decoration-line: underline;
 }
