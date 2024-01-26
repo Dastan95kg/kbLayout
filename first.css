@@ -1,6 +1,41 @@
-.plusIcon {
-    width: 20px;
-    height: 21px;
+.minusIcon {
+    display: none;
+}
+
+.toTopArrow {
+    position: fixed;
+    right: 40px;
+    bottom: 22px;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toTopArrow.active {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.toTopArrow.active svg {
+    fill: #606060;
+}
+
+.toTopArrow svg path {
+    fill: #fff;
+}
+
+.toTopArrow:hover svg path {
+    fill: #060606;
+}
+
+.toTopArrow:hover svg {
+    fill: #fff;
 }
 
 /* Intro */
@@ -126,12 +161,27 @@
 }
 
 .ideas__accordion {
+    padding: 24px 32px;
+    border: 1px solid var(--gradient-gradient-03, #0078C2);
+    cursor: pointer;
+}
+
+.ideas__accordion-main {
     display: grid;
     grid-template-columns: 48px 1fr 24px;
     gap: 16px;
     align-items: center;
-    padding: 24px 32px;
-    border: 1px solid var(--gradient-gradient-03, #0078C2);
+}
+
+.accordion__panel {
+    display: none;
+}
+
+.accordion__panel.active {
+    overflow: hidden;
+    display: block;
+    border-top: 1px solid var(--dark-D2D2D3--80, #D2D2D3);
+    padding-top: 12px;
 }
 
 .ideas__accordion-text {
@@ -149,6 +199,11 @@
     padding: 0;
     margin: 0;
     cursor: pointer;
+}
+
+.ideas__accordion-btn svg {
+    width: 20px;
+    height: 21px;
 }
 
 .ideas__accordion+.ideas__accordion {
