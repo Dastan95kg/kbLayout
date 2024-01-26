@@ -204,6 +204,10 @@ table {
     border-spacing: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html * {
     font-family: 'Museo300', sans-serif;
     color: #060606;
@@ -222,6 +226,7 @@ body {
 
 .wrapper {
     overflow: hidden;
+    position: relative;
 }
 
 * img {
@@ -231,4 +236,9 @@ body {
 
 * a[href]:hover {
     color: var(--blue-0A68F1---50, #0A68F1);
+}
+
+* button,
+* a {
+    transition: .2s linear all;
 }
