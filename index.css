@@ -211,7 +211,8 @@ html * {
 }
 
 .container {
-    padding: 0 168px;
+    margin: 0 auto;
+    width: 944px;
 }
 
 body {
@@ -220,11 +221,14 @@ body {
 }
 
 .wrapper {
-    width: 1280px;
     overflow: hidden;
 }
 
 * img {
     width: 100%;
     height: auto;
+}
+
+* a[href]:hover {
+    color: var(--blue-0A68F1---50, #0A68F1);
 }
