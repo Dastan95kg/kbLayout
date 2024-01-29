@@ -12,10 +12,8 @@
 }
 
 .intro__title-special {
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,10 +141,8 @@
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -1.12px;
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -290,9 +286,7 @@
 }
 
 .example2__footer {
-  display: flex;
   padding: 24px 32px;
-  align-items: center;
   border-left: 4px solid var(--purple-0A68F1---50, #0a68f1);
   background: var(--dark-F5F5F5---90, #f5f5f5);
 }
@@ -352,6 +346,102 @@
 }
 
 .frameworkDraft__img {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
+}
+
+/* Role */
+.role {
+  margin-bottom: 40px;
+}
+
+.role__title {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+  margin-bottom: 32px;
+}
+
+.role__title span {
+  color: var(--blue-0A68F1---50, #0A68F1);
+  margin-right: 10px;
+}
+
+.role__example {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.role__subtitle {
+  margin-bottom: 16px;
+}
+
+.role__list {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-bottom: 16px;
+}
+
+.role__text {
+  margin-bottom: 5px;
+}
+
+.role__header {
+  font-family: 'Museo700';
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 8px;
+}
+
+.role__header.campaigns {
+  margin: 32px 0 16px;
+}
+
+.role__card {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 24px 32px;
+  border: 1px solid var(--gradient-gradient-03, #0078C2);
+}
+
+.role__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.role__left img {
+  width: 100px;
+  height: 100px;
+}
+
+.role__left-title {
+  margin-top: 16px;
+  font-family: 'Museo700';
+  text-transform: uppercase;
+}
+
+.role__right-label {
+  font-family: 'Museo700';
+  margin-bottom: 4px;
+}
+
+.example2__footer.role {
+  margin-top: 16px;
+}
+
+/* RoleRecognition */
+.roleRecognition {
+  margin-bottom: 56px;
+}
+
+.roleRecognition__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.24px;
+  text-align: center;
 }
