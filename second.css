@@ -1,3 +1,59 @@
+/* accordion */
+.plusIcon {
+  display: none;
+}
+
+.ideas__accordion {
+  padding: 24px 32px;
+  border: 1px solid var(--gradient-gradient-03, #0078c2);
+  cursor: pointer;
+}
+
+.ideas__accordion-main {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  gap: 16px;
+  align-items: center;
+}
+
+.accordion__panel {
+  overflow: hidden;
+  display: block;
+  border-top: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.accordion__panel.active {
+  display: none;
+}
+
+.ideas__accordion-text {
+  font-family: "Museo700";
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.ideas__accordion-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ideas__accordion-btn svg {
+  width: 20px;
+  height: 21px;
+}
+
+.ideas__accordion + .ideas__accordion {
+  margin-top: 8px;
+}
+
 /* general css */
 .mb0 {
   margin-bottom: 0 !important;
@@ -374,13 +430,13 @@
 
 /* Location */
 .location__card {
-  border: 1px solid var(--gradient-gradient-03, #0078C2);
+  border: 1px solid var(--gradient-gradient-03, #0078c2);
   padding: 24px 32px;
 }
 
 .location__card h3 {
   font-size: 18px;
-  font-family: 'Museo700';
+  font-family: "Museo700";
   margin-bottom: 8px;
 }
 
@@ -390,7 +446,7 @@
   margin-left: 10px;
 }
 
-.location__card+.location__card {
+.location__card + .location__card {
   margin-top: 16px;
 }
 
@@ -419,7 +475,7 @@
 }
 
 .location__special {
-  font-family: 'Museo700';
+  font-family: "Museo700";
 }
 
 /* Role */
@@ -670,5 +726,5 @@
   line-height: 32px;
   letter-spacing: 0.24px;
   text-align: center;
-  font-family: 'Museo500';
+  font-family: "Museo500";
 }
