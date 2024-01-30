@@ -1,71 +1,71 @@
 @font-face {
-  font-family: "Museo100";
-  src: url("./fonts/exljbris\ -\ MuseoSans-100.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Museo100";
+    src: url("./fonts/exljbris\ -\ MuseoSans-100.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Museo100i";
-  src: url("./fonts/exljbris\ -\ MuseoSans-100Italic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
+    font-family: "Museo100i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-100Italic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Museo300";
-  src: url("./fonts/exljbris\ -\ MuseoSans-300.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Museo300";
+    src: url("./fonts/exljbris\ -\ MuseoSans-300.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Museo300i";
-  src: url("./fonts/exljbris\ -\ MuseoSans-300Italic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
+    font-family: "Museo300i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-300Italic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Museo500";
-  src: url("./fonts/exljbris\ -\ MuseoSans-500.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Museo500";
+    src: url("./fonts/exljbris\ -\ MuseoSans-500.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Museo500i";
-  src: url("./fonts/exljbris\ -\ MuseoSans-500Italic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
+    font-family: "Museo500i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-500Italic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Museo700";
-  src: url("./fonts/exljbris\ -\ MuseoSans-700.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Museo700";
+    src: url("./fonts/exljbris\ -\ MuseoSans-700.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Museo700i";
-  src: url("./fonts/exljbris\ -\ MuseoSans-700Italic.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Museo700i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-700Italic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Museo900";
-  src: url("./fonts/exljbris\ -\ MuseoSans-900.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
+    font-family: "Museo900";
+    src: url("./fonts/exljbris\ -\ MuseoSans-900.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Museo900i";
-  src: url("./fonts/exljbris\ -\ MuseoSans-900Italic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
+    font-family: "Museo900i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-900Italic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -154,12 +154,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -174,74 +174,74 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 body {
-  line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 html * {
-  font-family: "Museo300", sans-serif;
-  color: #060606;
-  line-height: 24px;
-  font-size: 16px;
+    font-family: "Museo300", sans-serif;
+    color: #060606;
+    line-height: 24px;
+    font-size: 16px;
 }
 
 .container {
-  margin: 0 auto;
-  width: 944px;
+    margin: 0 auto;
+    width: 944px;
 }
 
 body {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 }
 
 * img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 * a[href]:hover {
-  color: var(--blue-0A68F1---50, #0a68f1);
+    color: var(--blue-0A68F1---50, #0a68f1);
 }
 
 * button,
 * a {
-  transition: 0.2s linear all;
+    transition: 0.2s linear all;
 }
 
 /* Footer */
@@ -249,7 +249,7 @@ footer {
     padding: 32px 40px;
     background: var(--dark-060606---10, #060606);
 }
-
+    
 .footer__text {
     text-align: center;
     color: var(--dark-FFFFFF---100, #FFF);
@@ -257,4 +257,41 @@ footer {
     font-family: 'Museo500';
     line-height: 28px;
     letter-spacing: 0.2px;
+}
+
+/* ToTopArrow */
+.toTopArrow {
+    position: fixed;
+    right: 40px;
+    bottom: 22px;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toTopArrow.active {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.toTopArrow.active svg {
+    fill: #606060;
+}
+
+.toTopArrow svg path {
+    fill: #fff;
+}
+
+.toTopArrow:hover svg path {
+    fill: #060606;
+}
+
+.toTopArrow:hover svg {
+    fill: #fff;
 }
