@@ -3,6 +3,18 @@
   margin-bottom: 0 !important;
 }
 
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
 .generalIntro {
   display: grid;
   grid-template-columns: 1fr 460px 1fr;
@@ -19,7 +31,8 @@
   gap: 8px;
 }
 
-.generalIntro-title h4 {
+.generalIntro-title h4,
+.generalTitle700 {
   font-family: "Museo700";
 }
 
@@ -38,11 +51,7 @@
   font-size: 18px;
 }
 
-.generalFooter a {
-  font-size: 18px;
-  font-family: "Museo700";
-}
-
+.generalFooter a,
 .boldSpan {
   font-size: 18px;
   font-family: "Museo700";
@@ -51,9 +60,13 @@
 .generalList {
   list-style-type: disc;
   list-style-position: inside;
+  margin-left: 10px;
 }
 
-.mb32 {
+.generalTitle {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.4px;
   margin-bottom: 32px;
 }
 
@@ -63,7 +76,6 @@
 }
 
 .intro__title {
-  color: var(--dark-060606---10, #060606);
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.56px;
@@ -71,10 +83,8 @@
 }
 
 .intro__title-special {
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,13 +94,12 @@
   letter-spacing: 0.56px;
 }
 
-.intro__subtitle {
-  color: var(--dark-060606---10, #060606);
+.intro__subtitle,
+.unit__table-col {
   font-size: 18px;
 }
 
 .intro__list {
-  width: 829px;
   display: flex;
   gap: 40px;
   margin-top: 16px;
@@ -100,10 +109,6 @@
   list-style-type: disc;
   list-style-position: inside;
   color: #3693ff;
-}
-
-.intro__list-item span {
-  color: #060606;
 }
 
 /* Navigation */
@@ -127,14 +132,13 @@
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.4px;
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0078c2 0%, #0047ff 69.5%, #8453d2 100%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0078c2 0%, #0047ff 69.5%, #8453d2 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 4px;
+  margin-right: 10px;
 }
 
 .navigation__block-title {
@@ -157,26 +161,15 @@
   text-decoration-line: underline;
 }
 
-/* Project */
-.project__title {
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.4px;
-  margin-bottom: 32px;
-}
-
 /* Project__example1 */
-.project__example1 {
-  margin-bottom: 40px;
-}
-
 .example1__rules {
   display: flex;
   gap: 16px;
   margin-bottom: 40px;
 }
 
-.example1__rules-item {
+.example1__rules-item,
+.cardTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,19 +200,17 @@
   gap: 24px;
 }
 
-.cardTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.cardLogo {
+.cardLogo,
+.bonusSystem__table-badgesImg,
+.location__card-badges img,
+.role__left img,
+.unit__card-img {
   width: 100px;
   height: 100px;
 }
 
-.cardName {
+.cardName,
+.unit__card-name {
   text-align: center;
   font-family: "Museo700";
   text-transform: uppercase;
@@ -231,15 +222,7 @@
   gap: 4px;
 }
 
-.cardDescriptionTitle {
-  font-family: "Museo700";
-}
-
 /* Project__example2 */
-.project__example2 {
-  margin-bottom: 40px;
-}
-
 .example2__bonusSystem-title {
   text-align: center;
   margin-bottom: 32px;
@@ -280,36 +263,15 @@
   padding-top: 12px;
 }
 
-.bonusSystem__table-list {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-.bonusSystem__table-content1 {
-  margin-bottom: 16px;
-}
-
-.bonusSystem__table-content1 p {
-  margin-bottom: 16px;
-}
-
-.bonusSystem__table-content2 {
-  margin-bottom: 16px;
-}
-
 .bonusSystem__table-badges {
   display: flex;
   gap: 16px;
   margin-top: 10px;
 }
 
-.bonusSystem__table-badgesImg {
-  width: 100px;
-  height: 100px;
-}
-
 /* Project__frameworkDraft */
-.frameworkDraft__table {
+.frameworkDraft__table,
+.roleRecognition {
   margin-bottom: 56px;
 }
 
@@ -329,10 +291,10 @@
   background: var(--purple-D1E4FF---80, #d1e4ff);
 }
 
-.frameworkDraft__table-titleItem {
+.frameworkDraft__table-titleItem,
+.unit__table-name {
   font-family: "Museo700";
   font-size: 14px;
-  font-weight: 700;
   line-height: 20px;
 }
 
@@ -384,13 +346,8 @@
   margin-bottom: 8px;
 }
 
-.location__card-list {
-  list-style-type: disc;
-  list-style-position: inside;
-  margin-left: 10px;
-}
-
-.location__card+.location__card {
+.location__card+.location__card,
+.example2__footer.role {
   margin-top: 16px;
 }
 
@@ -401,21 +358,8 @@
   padding-top: 3px;
 }
 
-.location__card-badges.china {
-  margin-bottom: 32px;
-}
-
-.location__card-badges img {
-  width: 100px;
-  height: 100px;
-}
-
 .location__rules {
-  margin-top: 24px;
-}
-
-.location__info {
-  margin-bottom: 16px;
+  margin: 24px 0 16px;
 }
 
 .location__special {
@@ -423,29 +367,9 @@
 }
 
 /* Role */
-.role {
-  margin-bottom: 40px;
-}
-
-.role__title {
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.4px;
-  margin-bottom: 32px;
-}
-
 .role__title span {
   color: var(--blue-0A68F1---50, #0a68f1);
   margin-right: 10px;
-}
-
-.role__example {
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.role__subtitle {
-  margin-bottom: 16px;
 }
 
 .role__list {
@@ -486,11 +410,6 @@
   align-items: center;
 }
 
-.role__left img {
-  width: 100px;
-  height: 100px;
-}
-
 .role__left-title {
   margin-top: 16px;
   font-family: "Museo700";
@@ -502,30 +421,7 @@
   margin-bottom: 4px;
 }
 
-.example2__footer.role {
-  margin-top: 16px;
-}
-
-/* RoleRecognition */
-.roleRecognition {
-  margin-bottom: 56px;
-}
-
-/* Unit */
 /* unit__example1 */
-.unit__title {
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.4px;
-  margin-bottom: 32px;
-}
-
-.unit__recognitionStructure {
-  width: 944px;
-  height: 626px;
-  margin-bottom: 32px;
-}
-
 .unit__generalFlow {
   display: grid;
   gap: 16px;
@@ -554,23 +450,8 @@
   align-items: center;
 }
 
-.unit__card-img {
-  width: 100px;
-  height: 100px;
-}
-
-.unit__card-name {
-  text-align: center;
-  font-family: "Museo700";
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.unit__card-desc {
-  font-family: "Museo700";
-}
-
-.unit__card-content span {
+.unit__card-content span,
+.unit__table-col span {
   font-family: "Museo700";
 }
 
@@ -588,12 +469,6 @@
   background: var(--purple-D1E4FF---80, #d1e4ff);
 }
 
-.unit__table-name {
-  font-family: "Museo700";
-  font-size: 14px;
-  line-height: 20px;
-}
-
 .unit__table-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -604,23 +479,12 @@
   border-right: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
 }
 
-.unit__table-col {
-  font-size: 18px;
-}
-
-.unit__table-col p + p {
-  margin-top: 10px;
-}
-
-.unit__table-col p + ul {
+.unit__table-col p+p,
+.unit__table-col p+ul {
   margin-top: 10px;
 }
 
 /* unit__example2 */
-.unit__example2 {
-  margin-bottom: 40px;
-}
-
 .unit__example2-paragraph {
   font-family: "Museo300";
   font-size: 18px;
@@ -655,20 +519,4 @@
 
 .twoCol {
   grid-template-columns: 1fr 2fr;
-}
-
-.unit__table {
-  margin-bottom: 16px;
-}
-
-.unit__table-col span {
-  font-family: "Museo700";
-}
-
-.roleRecognition__title {
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 0.24px;
-  text-align: center;
-  font-family: 'Museo500';
 }

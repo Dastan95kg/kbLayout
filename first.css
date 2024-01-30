@@ -2,42 +2,6 @@
     display: none;
 }
 
-.toTopArrow {
-    position: fixed;
-    right: 40px;
-    bottom: 22px;
-    border: 0;
-    background: 0;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.toTopArrow.active {
-    opacity: 1;
-    pointer-events: auto;
-
-}
-
-.toTopArrow.active svg {
-    fill: #606060;
-}
-
-.toTopArrow svg path {
-    fill: #fff;
-}
-
-.toTopArrow:hover svg path {
-    fill: #060606;
-}
-
-.toTopArrow:hover svg {
-    fill: #fff;
-}
-
 /* Intro */
 .intro {
     padding: 80px 0 40px;
