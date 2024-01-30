@@ -50,7 +50,7 @@
   height: 21px;
 }
 
-.ideas__accordion + .ideas__accordion {
+.ideas__accordion+.ideas__accordion {
   margin-top: 8px;
 }
 
@@ -60,11 +60,15 @@
 }
 
 .mb16 {
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
+}
+
+.mb24 {
+  margin-bottom: 24px !important;
 }
 
 .mb32 {
-  margin-bottom: 32px;
+  margin-bottom: 32px !important;
 }
 
 .mb40 {
