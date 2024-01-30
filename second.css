@@ -53,6 +53,10 @@
   list-style-position: inside;
 }
 
+.mb32 {
+  margin-bottom: 32px;
+}
+
 /* Intro */
 .intro {
   padding: 80px 0 40px;
@@ -368,6 +372,56 @@
   height: 48px;
 }
 
+/* Location */
+.location__card {
+  border: 1px solid var(--gradient-gradient-03, #0078C2);
+  padding: 24px 32px;
+}
+
+.location__card h3 {
+  font-size: 18px;
+  font-family: 'Museo700';
+  margin-bottom: 8px;
+}
+
+.location__card-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+.location__card+.location__card {
+  margin-top: 16px;
+}
+
+.location__card-badges {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 3px;
+}
+
+.location__card-badges.china {
+  margin-bottom: 32px;
+}
+
+.location__card-badges img {
+  width: 100px;
+  height: 100px;
+}
+
+.location__rules {
+  margin-top: 24px;
+}
+
+.location__info {
+  margin-bottom: 16px;
+}
+
+.location__special {
+  font-family: 'Museo700';
+}
+
 /* Role */
 .role {
   margin-bottom: 40px;
@@ -616,4 +670,5 @@
   line-height: 32px;
   letter-spacing: 0.24px;
   text-align: center;
+  font-family: 'Museo500';
 }
