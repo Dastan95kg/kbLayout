@@ -1,4 +1,8 @@
 /* general css */
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
 .generalIntro {
   display: grid;
   grid-template-columns: 1fr 460px 1fr;
@@ -39,19 +43,9 @@
   font-family: "Museo700";
 }
 
-.generalFooter p {
-  font-size: 18px;
-}
-
 .boldSpan {
   font-size: 18px;
   font-family: "Museo700";
-}
-
-.underlineSpan {
-  font-size: 18px;
-  font-family: "Museo700";
-  text-decoration-line: underline;
 }
 
 .generalList {
@@ -73,8 +67,10 @@
 }
 
 .intro__title-special {
-  background: var(--gradient-gradient-03,
-      linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%));
+  background: var(
+    --gradient-gradient-03,
+    linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -313,6 +309,14 @@
   margin-bottom: 56px;
 }
 
+.frameworkDraft__table-name {
+  font-family: "Museo700";
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 32px 32px 16px 32px;
+}
+
 .frameworkDraft__table-title {
   display: grid;
   grid-template-columns: 160px 328px 210px 110px;
@@ -345,6 +349,12 @@
   height: fit-content;
 }
 
+.frameworkDraft__col-text {
+  display: grid;
+  gap: 10px;
+  height: fit-content;
+}
+
 .frameworkDraft__col-name {
   text-align: center;
   font-family: "Museo700";
@@ -371,7 +381,7 @@
 }
 
 .role__title span {
-  color: var(--blue-0A68F1---50, #0A68F1);
+  color: var(--blue-0A68F1---50, #0a68f1);
   margin-right: 10px;
 }
 
@@ -395,7 +405,7 @@
 }
 
 .role__header {
-  font-family: 'Museo700';
+  font-family: "Museo700";
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.2px;
@@ -412,7 +422,7 @@
   grid-template-columns: 160px 1fr;
   gap: 24px;
   padding: 24px 32px;
-  border: 1px solid var(--gradient-gradient-03, #0078C2);
+  border: 1px solid var(--gradient-gradient-03, #0078c2);
 }
 
 .role__left {
@@ -429,12 +439,12 @@
 
 .role__left-title {
   margin-top: 16px;
-  font-family: 'Museo700';
+  font-family: "Museo700";
   text-transform: uppercase;
 }
 
 .role__right-label {
-  font-family: 'Museo700';
+  font-family: "Museo700";
   margin-bottom: 4px;
 }
 
