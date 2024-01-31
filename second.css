@@ -177,9 +177,11 @@
   list-style-position: inside;
   color: #3693ff;
 }
+
 /* MainImg*/
 .mainImg {
   height: 440px;
+  overflow: hidden;
 }
 
 /* Navigation */
