@@ -1,69 +1,69 @@
 @font-face {
-    font-family: 'Museo100';
-    src: url('./fonts/exljbris\ -\ MuseoSans-100.woff') format('woff');
+    font-family: "Museo100";
+    src: url("./fonts/exljbris\ -\ MuseoSans-100.woff") format("woff");
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo100i';
-    src: url('./fonts/exljbris\ -\ MuseoSans-100Italic.woff') format('woff');
+    font-family: "Museo100i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-100Italic.woff") format("woff");
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Museo300';
-    src: url('./fonts/exljbris\ -\ MuseoSans-300.woff') format('woff');
+    font-family: "Museo300";
+    src: url("./fonts/exljbris\ -\ MuseoSans-300.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo300i';
-    src: url('./fonts/exljbris\ -\ MuseoSans-300Italic.woff') format('woff');
+    font-family: "Museo300i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-300Italic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Museo500';
-    src: url('./fonts/exljbris\ -\ MuseoSans-500.woff') format('woff');
+    font-family: "Museo500";
+    src: url("./fonts/exljbris\ -\ MuseoSans-500.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo500i';
-    src: url('./fonts/exljbris\ -\ MuseoSans-500Italic.woff') format('woff');
+    font-family: "Museo500i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-500Italic.woff") format("woff");
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Museo700';
-    src: url('./fonts/exljbris\ -\ MuseoSans-700.woff') format('woff');
+    font-family: "Museo700";
+    src: url("./fonts/exljbris\ -\ MuseoSans-700.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo700i';
-    src: url('./fonts/exljbris\ -\ MuseoSans-700Italic.woff') format('woff');
+    font-family: "Museo700i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-700Italic.woff") format("woff");
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Museo900';
-    src: url('./fonts/exljbris\ -\ MuseoSans-900.woff') format('woff');
+    font-family: "Museo900";
+    src: url("./fonts/exljbris\ -\ MuseoSans-900.woff") format("woff");
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Museo900i';
-    src: url('./fonts/exljbris\ -\ MuseoSans-900Italic.woff') format('woff');
+    font-family: "Museo900i";
+    src: url("./fonts/exljbris\ -\ MuseoSans-900Italic.woff") format("woff");
     font-weight: 900;
     font-style: italic;
 }
@@ -195,7 +195,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
+    content: "";
     content: none;
 }
 
@@ -209,9 +209,10 @@ html {
 }
 
 html * {
-    font-family: 'Museo300', sans-serif;
+    font-family: "Museo300", sans-serif;
     color: #060606;
     line-height: 24px;
+    font-size: 16px;
 }
 
 .container {
@@ -235,10 +236,62 @@ body {
 }
 
 * a[href]:hover {
-    color: var(--blue-0A68F1---50, #0A68F1);
+    color: var(--blue-0A68F1---50, #0a68f1);
 }
 
 * button,
 * a {
-    transition: .2s linear all;
+    transition: 0.2s linear all;
+}
+
+/* Footer */
+footer {
+    padding: 32px 40px;
+    background: var(--dark-060606---10, #060606);
+}
+    
+.footer__text {
+    text-align: center;
+    color: var(--dark-FFFFFF---100, #FFF);
+    font-size: 20px;
+    font-family: 'Museo500';
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+/* ToTopArrow */
+.toTopArrow {
+    position: fixed;
+    right: 40px;
+    bottom: 22px;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toTopArrow.active {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.toTopArrow.active svg {
+    fill: #606060;
+}
+
+.toTopArrow svg path {
+    fill: #fff;
+}
+
+.toTopArrow:hover svg path {
+    fill: #060606;
+}
+
+.toTopArrow:hover svg {
+    fill: #fff;
 }

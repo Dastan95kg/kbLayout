@@ -1,10 +1,146 @@
+/* accordion */
+.plusIcon {
+  display: none;
+}
+
+.ideas__accordion {
+  padding: 24px 32px;
+  border: 1px solid var(--gradient-gradient-03, #0078c2);
+  cursor: pointer;
+}
+
+.ideas__accordion-main {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  gap: 16px;
+  align-items: center;
+}
+
+.accordion__panel {
+  display: none;
+}
+
+.accordion__panel.active {
+  overflow: hidden;
+  display: block;
+  border-top: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.ideas__accordion-text {
+  font-family: "Museo700";
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.ideas__accordion-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ideas__accordion-btn svg {
+  width: 20px;
+  height: 21px;
+}
+
+.ideas__accordion+.ideas__accordion {
+  margin-top: 8px;
+}
+
+/* general css */
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.mb16 {
+  margin-bottom: 16px !important;
+}
+
+.mb24 {
+  margin-bottom: 24px !important;
+}
+
+.mb32 {
+  margin-bottom: 32px !important;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.generalIntro {
+  display: grid;
+  grid-template-columns: 1fr 460px 1fr;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.generalIntro-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.generalIntro-title h4,
+.generalTitle700 {
+  font-family: "Museo700";
+}
+
+.generalIntro-subtitle {
+  font-family: "Museo500";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.24px;
+  text-align: center;
+}
+
+.generalFooter {
+  padding: 24px 32px;
+  border-left: 4px solid var(--purple-0A68F1---50, #0a68f1);
+  background: var(--dark-F5F5F5---90, #f5f5f5);
+  font-size: 18px;
+}
+
+.generalFooter a,
+.boldSpan {
+  font-size: 18px;
+  font-family: "Museo700";
+}
+
+.generalFooter__link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.generalList {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+.generalTitle {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+  margin-bottom: 32px;
+}
+
 /* Intro */
 .intro {
   padding: 80px 0 40px;
 }
 
 .intro__title {
-  color: var(--dark-060606---10, #060606);
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.56px;
@@ -12,29 +148,28 @@
 }
 
 .intro__title-special {
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 56px;
+  font-family: "Museo500";
   line-height: 64px;
   letter-spacing: 0.56px;
 }
 
-.intro__subtitle {
-  color: var(--dark-060606---10, #060606);
+.intro__subtitle,
+.unit__table-col {
   font-size: 18px;
-  line-height: 24px;
 }
 
 .intro__list {
-  width: 829px;
   display: flex;
   gap: 40px;
   margin-top: 16px;
+  margin-left: 5px;
+  font-size: 18px;
 }
 
 .intro__list-item {
@@ -43,6 +178,420 @@
   color: #3693ff;
 }
 
-.intro__list-item span {
-  color: #060606;
+/* MainImg*/
+.mainImg {
+  height: 440px;
+  overflow: hidden;
+}
+
+/* Navigation */
+.navigation {
+  padding: 56px 0;
+  margin-bottom: 56px;
+  background: var(--dark-F5F5F5---90, #f5f5f5);
+}
+
+.navigation__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.navigation__block {
+  border: 1px solid var(--gradient-gradient-03, #0175c7);
+  padding: 24px 32px;
+  background: var(--dark-FFFFFF---100, #fff);
+}
+
+.navigation__block-number {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0078c2 0%, #0047ff 69.5%, #8453d2 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+.navigation__block-title {
+  font-size: 24px;
+  font-family: "Museo500";
+  line-height: 32px;
+  letter-spacing: 0.24px;
+  margin-bottom: 16px;
+}
+
+.navigation__block-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navigation__block-links a {
+  font-size: 18px;
+  font-family: "Museo700";
+  text-decoration-line: underline;
+}
+
+/* Project__example1 */
+.example1__rules {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.example1__rules-item,
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.shapeIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.example1__rules-text {
+  text-align: center;
+}
+
+.example1__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.example1__cards-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  padding: 24px 32px;
+  border: 1px solid var(--gradient-gradient-03, #0175c7);
+  gap: 24px;
+}
+
+.cardLogo,
+.bonusSystem__table-badgesImg,
+.location__card-badges img,
+.role__left img,
+.unit__card-img {
+  width: 100px;
+  height: 100px;
+}
+
+.cardName,
+.unit__card-name {
+  text-align: center;
+  font-family: "Museo700";
+  text-transform: uppercase;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Project__example2 */
+.example2__bonusSystem-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: "Museo700";
+}
+
+.example2__bonusSystem-tables {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.bonusSystem__table {
+  padding: 24px 32px;
+  border: 1px solid var(--gradient-gradient-03, #0175c7);
+}
+
+.bonusSystem__table-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.bonusSystem__table-title h3 {
+  font-family: "Museo700";
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.minusIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.bonusSystem__table-content {
+  border-top: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  padding-top: 12px;
+}
+
+.bonusSystem__table-badges {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+/* Project__frameworkDraft */
+.frameworkDraft__table,
+.roleRecognition {
+  margin-bottom: 56px;
+}
+
+.frameworkDraft__table-name {
+  font-family: "Museo700";
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 32px 32px 16px 32px;
+}
+
+.frameworkDraft__table-title {
+  display: grid;
+  grid-template-columns: 160px 328px 210px 110px;
+  gap: 24px;
+  padding: 8px 32px;
+  background: var(--purple-D1E4FF---80, #d1e4ff);
+}
+
+.frameworkDraft__table-titleItem,
+.unit__table-name {
+  font-family: "Museo700";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.frameworkDraft__row {
+  display: grid;
+  grid-template-columns: 160px 328px 210px 110px;
+  padding: 16px 32px;
+  gap: 24px;
+  border-bottom: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  border-left: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  border-right: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+}
+
+.frameworkDraft__col {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  height: fit-content;
+}
+
+.frameworkDraft__col-text {
+  display: grid;
+  gap: 10px;
+  height: fit-content;
+}
+
+.frameworkDraft__col-name {
+  text-align: center;
+  font-family: "Museo700";
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+}
+
+.frameworkDraft__img {
+  width: 48px;
+  height: 48px;
+}
+
+/* Location */
+.location__card {
+  border: 1px solid var(--gradient-gradient-03, #0078c2);
+  padding: 24px 32px;
+}
+
+.location__card h3 {
+  font-size: 18px;
+  font-family: "Museo700";
+  margin-bottom: 8px;
+}
+
+.location__card+.location__card,
+.example2__footer.role {
+  margin-top: 16px;
+}
+
+.location__card-badges {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 3px;
+}
+
+.location__rules {
+  margin: 24px 0 16px;
+}
+
+.location__special {
+  font-family: "Museo700";
+}
+
+/* Role */
+.role__title span {
+  color: var(--blue-0A68F1---50, #0a68f1);
+  margin-right: 10px;
+}
+
+.role__list {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-bottom: 16px;
+}
+
+.role__text {
+  margin-bottom: 5px;
+}
+
+.role__header {
+  font-family: "Museo700";
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  margin-bottom: 8px;
+}
+
+.role__header.campaigns {
+  margin: 32px 0 16px;
+}
+
+.role__card {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding: 24px 32px;
+  border: 1px solid var(--gradient-gradient-03, #0078c2);
+}
+
+.role__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.role__left-title {
+  margin-top: 16px;
+  font-family: "Museo700";
+  text-transform: uppercase;
+}
+
+.role__right-label {
+  font-family: "Museo700";
+  margin-bottom: 4px;
+}
+
+/* unit__example1 */
+.unit__generalFlow {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.unit__sectionName {
+  font-family: "Museo700";
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.unit__card {
+  display: grid;
+  grid-template-columns: 160px 1fr 1fr 1fr 1fr;
+  padding: 24px 32px;
+  gap: 24px;
+  border: 1px solid var(--gradient-gradient-03, #0175c7);
+}
+
+.unit__card-title {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+}
+
+.unit__card-content span,
+.unit__table-col span {
+  font-family: "Museo700";
+}
+
+.unit__requirements {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.unit__table-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px 32px;
+  gap: 24px;
+  background: var(--purple-D1E4FF---80, #d1e4ff);
+}
+
+.unit__table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 16px 32px;
+  gap: 24px;
+  border-bottom: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  border-left: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+  border-right: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
+}
+
+.unit__table-col p+p,
+.unit__table-col p+ul {
+  margin-top: 10px;
+}
+
+/* unit__example2 */
+.unit__example2-paragraph {
+  font-family: "Museo300";
+  font-size: 18px;
+}
+
+.unit__example2-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 16px 0 24px 0;
+}
+
+.unit__example2-img {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+.unit__example2-img p {
+  font-family: "Museo700";
+  font-size: 18px;
+}
+
+.unit__diploma {
+  width: 315px;
+  height: 220px;
+}
+
+.unit__badge {
+  width: 220px;
+  height: 220px;
+}
+
+.twoCol {
+  grid-template-columns: 1fr 2fr;
 }
