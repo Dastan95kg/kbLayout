@@ -50,7 +50,7 @@
   height: 21px;
 }
 
-.ideas__accordion + .ideas__accordion {
+.ideas__accordion+.ideas__accordion {
   margin-top: 8px;
 }
 
@@ -117,6 +117,11 @@
   font-family: "Museo700";
 }
 
+.generalFooter__link {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 .generalList {
   list-style-type: disc;
   list-style-position: inside;
@@ -143,10 +148,8 @@
 }
 
 .intro__title-special {
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0175c7 28.73%, #0148ff 38.62%, #5650e3 50.35%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -202,10 +205,8 @@
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.4px;
-  background: var(
-    --gradient-gradient-03,
-    linear-gradient(90deg, #0078c2 0%, #0047ff 69.5%, #8453d2 100%)
-  );
+  background: var(--gradient-gradient-03,
+      linear-gradient(90deg, #0078c2 0%, #0047ff 69.5%, #8453d2 100%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -418,7 +419,7 @@
   margin-bottom: 8px;
 }
 
-.location__card + .location__card,
+.location__card+.location__card,
 .example2__footer.role {
   margin-top: 16px;
 }
@@ -551,8 +552,8 @@
   border-right: 1px solid var(--dark-D2D2D3--80, #d2d2d3);
 }
 
-.unit__table-col p + p,
-.unit__table-col p + ul {
+.unit__table-col p+p,
+.unit__table-col p+ul {
   margin-top: 10px;
 }
 
