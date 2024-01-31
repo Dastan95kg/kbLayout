@@ -165,12 +165,18 @@
   display: flex;
   gap: 40px;
   margin-top: 16px;
+  margin-left: 5px;
+  font-size: 18px;
 }
 
 .intro__list-item {
   list-style-type: disc;
   list-style-position: inside;
   color: #3693ff;
+}
+/* MainImg*/
+.mainImg {
+  height: 440px;
 }
 
 /* Navigation */
