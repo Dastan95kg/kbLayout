@@ -164,18 +164,26 @@
   font-size: 18px;
 }
 
-.intro__list {
-  display: flex;
+.intro__grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
   gap: 40px;
   margin-top: 16px;
   margin-left: 5px;
-  font-size: 18px;
 }
 
 .intro__list-item {
   list-style-type: disc;
   list-style-position: inside;
   color: #3693ff;
+}
+
+.intro__list-item+.intro__list-item {
+  margin-top: 4px;
+}
+
+.intro__list-item span {
+  font-size: 18px;
 }
 
 /* MainImg*/
