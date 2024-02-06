@@ -91,7 +91,7 @@
   gap: 8px;
 }
 
-.generalIntro-title h4,
+.generalIntro-title span,
 .generalTitle700 {
   font-family: "Museo700";
 }
@@ -102,6 +102,11 @@
   line-height: 32px;
   letter-spacing: 0.24px;
   text-align: center;
+}
+
+.generalIntro-subtitle span {
+  margin-bottom: 8px;
+  display: inline-block;
 }
 
 .generalFooter {
