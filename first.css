@@ -299,6 +299,7 @@
 }
 
 .badges__btn {
+    background: #F5F5F5;
     border-radius: 100px;
     border: 1px solid var(--gradient-gradient-03, #0078C2);
     padding: 16px 32px;
