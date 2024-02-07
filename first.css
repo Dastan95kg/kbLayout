@@ -53,9 +53,11 @@
 }
 
 .reasons__title {
+    font-family: 'Museo500';
     font-size: 24px;
-    font-weight: 400;
     margin: 12px 0 8px;
+    line-height: 32px;
+    letter-spacing: 0.24px;
 }
 
 .reasons__subtitle {
