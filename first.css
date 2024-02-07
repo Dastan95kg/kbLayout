@@ -204,7 +204,7 @@
     border: 1px solid var(--gradient-gradient-03, #0078C2);
 }
 
-.programs__card h4 {
+.programs__card h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
@@ -247,7 +247,7 @@
 }
 
 .programs__global-text.special {
-    color: var(--dark-727477---50, #727477);
+    color: var(--dark-727477---50, #4E4F51);
 }
 
 .shapeIcon {
