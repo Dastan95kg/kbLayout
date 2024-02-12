@@ -404,35 +404,3 @@ path {
 .howTo__learn {
     margin-top: 16px;
 }
-
-/* Ambassador */
-.ambassador {
-    padding: 56px 0;
-}
-
-.ambassador__content {
-    background: var(--dark-F5F5F5---90, #F5F5F5);
-    padding: 24px 32px;
-}
-
-.ambassador h3 {
-    font-size: 40px;
-    font-family: 'Museo100';
-    line-height: 48px;
-    letter-spacing: 0.4px;
-    margin-bottom: 16px;
-}
-
-.ambassador p,
-ul {
-    font-size: 18px;
-}
-
-.ambassador__text {
-    margin-bottom: 10px;
-}
-
-.ambassador__list {
-    list-style: disc;
-    list-style-position: inside;
-}
